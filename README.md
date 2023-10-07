@@ -1,2 +1,3 @@
 # CIS-18_Threads-and-the-Singleton
 CIS-18 Threads and the Singleton lab, Due 10/7/2023
+When running the code there are two differing outcomes depending on the type of singleton that is called. If the lazy singleton is called then when the program is run, we end up with multiple instances of the singleton breaking it. On the otherhadn, if we call the enum singleton, due to the fact that the enum is static and final and therefore can be the only instance at runtime, when the program is run, the hashcode stays the same as the JVM keeps the original singleton as the only one, keeping the singleton from breaking.
